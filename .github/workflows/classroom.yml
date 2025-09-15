@@ -1,6 +1,14 @@
+
 autograding:
   - name: Smoothie Test
     run: pytest tests/test_main.py
     points: 10
     timeout: 10
     comparison-method: exact
+
+# Protected file paths to prevent student modification
+protected-paths:
+  - tests/
+  - .github/
+  - README.md
+  - classroom.yml
