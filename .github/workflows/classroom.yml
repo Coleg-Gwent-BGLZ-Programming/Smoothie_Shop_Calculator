@@ -1,9 +1,20 @@
+# classroom.yml
 
 autograding:
   - name: Smoothie Test
-    run: pytest tests/test_main.py
-    points: 10
-    timeout: 10
+    setup: |
+      pip install pytest
+    run: |
+      pytest tests/test_main.py
+    input: ""
+    expected-output: ""
     comparison-method: exact
+    timeout: 10
+    points: 10
 
-
+# Protected files to prevent student edits
+protected-paths:
+  - tests/
+  - .github/
+  - README.md
+  - classroom.yml
