@@ -1,0 +1,16 @@
+jobs:
+  smoothie-test:
+    name: Smoothie Test
+    setup: pip install pytest
+    run: pytest tests/test-main.py
+    input: ""
+    expected-output: ""
+    comparison-method: exact
+    timeout: 10
+    points: 10
+
+protected-paths:
+  - tests/
+  - .github/
+  - README.md
+  - classroom.yml
