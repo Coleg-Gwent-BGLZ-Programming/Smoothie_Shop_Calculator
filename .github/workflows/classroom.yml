@@ -1,0 +1,6 @@
+autograding:
+  - name: Smoothie Test
+    run: pytest tests/test_main.py
+    points: 10
+    timeout: 10
+    comparison-method: exact
